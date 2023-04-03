@@ -21,6 +21,8 @@
     "type": "git",
     "url": "https://gitee.com/brother-linghu/wangyes-pre.git"
   },
+  "types": "dist/index.d.ts",
+
   "scripts": {
     "test": "node ./__tests__/@wangyes/tools-fn.test.js",
     "build": "rollup -c && api-extractor run && rimraf dts"

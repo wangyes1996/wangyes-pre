@@ -50,7 +50,7 @@ module.exports =  {
     //       '@/*': ['./bin'],
     //     },
     // }}),//合并d.ts
-    terser(),//代码压缩
+    // terser(),//代码压缩
     // cleanup(),//删除无效代码
   ],
 }
