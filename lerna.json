@@ -4,5 +4,10 @@
   "version": "independent",
   "npmClient": "yarn",
   "access": "public",
-  "command.publish.registry:": "https://registry.npmjs.org"
+  "command.publish.registry:": "https://registry.npmjs.org",
+  "command": {
+    "bootstrap": {
+      "hoist": false 
+    }
+  }
 }
