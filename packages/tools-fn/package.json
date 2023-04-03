@@ -4,7 +4,7 @@
   "description": "工具函数",
   "author": "wangyes <wangyes1996@163.com>",
   "homepage": "",
-  "license": "ISC",
+  "license": "MIT",
   "main": "lib/tools-fn.js",
   "directories": {
     "lib": "lib",
@@ -35,5 +35,5 @@
     "rollup-plugin-typescript2": "^0.34.1",
     "typescript": "^5.0.3"
   },
-  "gitHead": "de8efb068710df5ecddde765641413d3807f5156"
+  "gitHead": "057d9ec09840986bd3bb764cefef203e11d90742"
 }
