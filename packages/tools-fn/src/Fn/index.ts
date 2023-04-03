@@ -1,4 +1,4 @@
-export default ():void=>{
+export default ()=>{
 
     return console.log('Fn');
     
