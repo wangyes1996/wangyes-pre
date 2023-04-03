@@ -14,7 +14,9 @@
     "dist"
   ],
   "publishConfig": {
-    "registry": "https://registry.npmjs.org"
+    "registry": "https://registry.npmjs.org",
+    "access": "public"
+
   },
   "repository": {
     "type": "git",
@@ -35,5 +37,5 @@
     "rollup-plugin-typescript2": "^0.34.1",
     "typescript": "^5.0.3"
   },
-  "gitHead": "83cc2fe4fc2611d79612a7ffcb9900a7b54e8eb7"
+  "gitHead": "c00342a121b0a60e0a3a57e791fcac9f004d80c4"
 }
