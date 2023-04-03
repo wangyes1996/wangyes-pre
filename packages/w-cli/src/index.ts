@@ -24,6 +24,7 @@ console.log(figlet.textSync('FreeDom Is Everything!', {
     width: 150,
     whitespaceBreak: true
 }));
+
 prog.version(version);
 scriptMeta.forEach((item, index) => {
     prog
