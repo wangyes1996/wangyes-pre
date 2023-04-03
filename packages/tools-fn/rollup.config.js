@@ -12,8 +12,6 @@ const {
 const replace =require('@rollup/plugin-replace')
 const extensions = ['.js', '.ts']
 
-
-
 module.exports =  {
   input: './src/index.ts',
   output: [
