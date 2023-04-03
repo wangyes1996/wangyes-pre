@@ -68,5 +68,6 @@
       "prettier --write",
       "yarn lint"
     ]
-  }
+  },
+  "gitHead": "8b8662283f7c1d67dd5ce5de5d7ad3d6fcb73a7d"
 }

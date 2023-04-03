@@ -34,5 +34,6 @@
     "rollup-plugin-cleandir": "^2.0.0",
     "rollup-plugin-typescript2": "^0.34.1",
     "typescript": "^5.0.3"
-  }
+  },
+  "gitHead": "8b8662283f7c1d67dd5ce5de5d7ad3d6fcb73a7d"
 }
