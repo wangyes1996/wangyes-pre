@@ -1,6 +1,6 @@
 {
   "name": "@wangyes/w-cli",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "main": "bin/index.js",
   "type": "commonjs",
   "author": "wangyes <wangyes1996@163.com>",
@@ -37,7 +37,6 @@
   "publishConfig": {
     "registry": "https://registry.npmjs.org",
     "access": "public"
-
   },
   "dependencies": {
     "@rollup/plugin-replace": "^5.0.2",
