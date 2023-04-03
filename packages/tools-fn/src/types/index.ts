@@ -1,3 +1,3 @@
-export type defa_T={
-    Fn:Function
+export type defa_T ={
+   Fn:Function
 }
