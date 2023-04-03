@@ -1,6 +1,6 @@
 {
   "name": "@wangyes/tools-fn",
-  "version": "1.0.12",
+  "version": "1.0.13",
   "description": "工具函数",
   "author": "wangyes <wangyes1996@163.com>",
   "homepage": "",
@@ -22,7 +22,6 @@
     "url": "https://gitee.com/brother-linghu/wangyes-pre.git"
   },
   "types": "dist/index.d.ts",
-
   "scripts": {
     "test": "node ./__tests__/@wangyes/tools-fn.test.js",
     "build": "rollup -c && api-extractor run && rimraf dts"
