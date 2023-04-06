@@ -13,9 +13,6 @@ import figlet from 'figlet'
 import ora from "ora"
 const spinner = ora("Loading unicorns");
 
-
-
-
 const prog = sade("w-cli");
 console.log(figlet.textSync('FreeDom Is Everything!', {
     font: 'Ghost',

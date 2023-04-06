@@ -7,15 +7,16 @@
   "bin": {
     "w-cli": "bin/index.js"
   },
+  "types":"bin/types/index.d",
   "files": [
-    "bin"
+    "bin","template"
   ],
   "license": "MIT",
   "scripts": {
     "lint": "eslint 'src/**/*.{js,ts}' --fix",
     "dev": "rollup -w -c",
-    "build": "rollup -c && api-extractor run && rimraf dts",
-    "build-t": "rollup -c "
+    "build": "rollup -c ",
+    "build-t": "rollup -c && api-extractor run && rimraf dts"
   },
   "devDependencies": {
     "@microsoft/api-extractor": "^7.34.4",

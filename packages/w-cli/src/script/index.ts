@@ -31,13 +31,19 @@ export const scriptMeta:scriptMeta_T=[
             spinner.start();
             spinner.color = "yellow";
             spinner.text = "Loading rainbows";
-            execa('git',['clone','https://gitee.com/brother-linghu/cornucopia.git'],{cwd:'./'})
-            setTimeout(() => {
+            execa('git',['clone','https://gitee.com/brother-linghu/cornucopia.git'],{cwd:'./'}).finally(()=>{
                 spinner.succeed();
-            }, 3000);
+
+            })
         }
 
     },
     // 执行一键部署docker
-
+    // {
+    //     command:"docker",
+    //     option:"",
+    //     describe:"一键安装docker镜像",
+    //     example:"w-cli docker <images>",
+    //     action:[]
+    // }
 ]
