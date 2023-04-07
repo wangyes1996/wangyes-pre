@@ -34,6 +34,7 @@ export const scriptMeta:scriptMeta_T=[
             $`git clone https://gitee.com/brother-linghu/cornucopia.git`.finally(()=>{
                 spinner.succeed();
 
+                
             })
             // execa('git',['clone','https://gitee.com/brother-linghu/cornucopia.git'],{cwd:'./'}).finally(()=>{
            

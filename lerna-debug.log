@@ -7,7 +7,7 @@
 1 notice cli v5.6.2
 2 verbose rootPath /Users/wangjun/code/Mine/wangyes-pre
 3 info versioning independent
-4 verbose session dad10ee299d0daaa
+4 verbose session 960281c8eac7043a
 5 verbose user-agent lerna/5.6.2/node@v16.17.0+arm64 (darwin)
 6 silly argv { _: [ 'publish' ], composed: 'publish', lernaVersion: '5.6.2' }
 7 verbose rootPath /Users/wangjun/code/Mine/wangyes-pre
@@ -17,113 +17,85 @@
 11 verbose currentBranch master
 12 silly remoteBranchExists
 13 silly isBehindUpstream
-14 silly isBehindUpstream master is behind origin/master by 0 commit(s) and ahead by 0
+14 silly isBehindUpstream master is behind origin/master by 0 commit(s) and ahead by 1
 15 silly hasTags
 16 verbose hasTags true
-17 silly git-describe.sync "@wangyes/tools-fn@1.0.15-2-gb47a599" => {"lastTagName":"@wangyes/tools-fn@1.0.15","lastVersion":"1.0.15","refCount":"2","sha":"b47a599","isDirty":false}
-18 info Looking for changed packages since @wangyes/tools-fn@1.0.15
+17 silly git-describe.sync "@wangyes/w-cli@1.0.12-1-g4b30bfa" => {"lastTagName":"@wangyes/w-cli@1.0.12","lastVersion":"1.0.12","refCount":"1","sha":"4b30bfa","isDirty":false}
+18 info Looking for changed packages since @wangyes/w-cli@1.0.12
 19 silly checking diff packages/tools-fn
-20 silly found diff in packages/tools-fn/src/index.ts
-20 silly found diff in packages/tools-fn/src/types/index.ts
-21 verbose filtered diff [
-21 verbose filtered diff   'packages/tools-fn/src/index.ts',
-21 verbose filtered diff   'packages/tools-fn/src/types/index.ts'
-21 verbose filtered diff ]
-22 silly checking diff packages/w-cli
-23 silly found diff in packages/w-cli/package.json
-23 silly found diff in packages/w-cli/src/index.ts
-23 silly found diff in packages/w-cli/src/script/index.ts
-24 verbose filtered diff [
-24 verbose filtered diff   'packages/w-cli/package.json',
-24 verbose filtered diff   'packages/w-cli/src/index.ts',
-24 verbose filtered diff   'packages/w-cli/src/script/index.ts'
-24 verbose filtered diff ]
-25 verbose updated @wangyes/tools-fn
-26 verbose updated @wangyes/w-cli
-27 verbose git-describe undefined => "@wangyes/tools-fn@1.0.15-2-gb47a599"
-28 silly git-describe parsed => {"lastTagName":"@wangyes/tools-fn@1.0.15","lastVersion":"1.0.15","refCount":"2","sha":"b47a599","isDirty":false}
-29 info execute Skipping releases
-30 silly lifecycle No script for "preversion" in "wangyes-pre", continuing
-31 silly lifecycle No script for "preversion" in "@wangyes/tools-fn", continuing
-32 silly lifecycle No script for "preversion" in "@wangyes/w-cli", continuing
-33 verbose version @wangyes/tools-fn has no lockfile. Skipping lockfile update.
-34 verbose version @wangyes/w-cli has no lockfile. Skipping lockfile update.
-35 silly lifecycle No script for "version" in "@wangyes/w-cli", continuing
-36 silly lifecycle No script for "version" in "@wangyes/tools-fn", continuing
-37 silly lifecycle No script for "version" in "wangyes-pre", continuing
-38 silly version Successfully applied prettier to updated file: packages/w-cli/package.json
-39 silly version Successfully applied prettier to updated file: packages/tools-fn/package.json
-40 silly gitAdd [ 'packages/w-cli/package.json', 'packages/tools-fn/package.json' ]
-41 silly gitCommit Publish
-41 silly gitCommit
-41 silly gitCommit  - @wangyes/tools-fn@1.0.16
-41 silly gitCommit  - @wangyes/w-cli@1.0.10
-42 verbose git [
-42 verbose git   'commit',
-42 verbose git   '-F',
-42 verbose git   '/private/var/folders/43/q8rc52s51q7b2pjkclfv2bp80000gn/T/1e4a07b1-552d-4c02-ba8b-762f876cc92b/lerna-commit.txt'
-42 verbose git ]
-43 silly gitTag @wangyes/tools-fn@1.0.16
-44 verbose git [ 'tag', '@wangyes/tools-fn@1.0.16', '-m', '@wangyes/tools-fn@1.0.16' ]
-45 silly gitTag @wangyes/w-cli@1.0.10
-46 verbose git [ 'tag', '@wangyes/w-cli@1.0.10', '-m', '@wangyes/w-cli@1.0.10' ]
-47 silly lifecycle No script for "postversion" in "@wangyes/tools-fn", continuing
-48 silly lifecycle No script for "postversion" in "@wangyes/w-cli", continuing
-49 silly lifecycle No script for "postversion" in "wangyes-pre", continuing
-50 info git Pushing tags...
-51 silly gitPush origin master
-52 info publish Publishing packages to npm...
-53 silly getCurrentSHA
-54 verbose getCurrentSHA f0f8a024b2995f8114e1ddc1316bc0251e365afd
-55 silly lifecycle No script for "prepublish" in "wangyes-pre", continuing
-56 silly lifecycle No script for "prepare" in "wangyes-pre", continuing
-57 silly lifecycle No script for "prepublishOnly" in "wangyes-pre", continuing
-58 silly lifecycle No script for "prepack" in "wangyes-pre", continuing
-59 verbose pack-directory packages/tools-fn
-60 verbose pack-directory packages/w-cli
-61 silly lifecycle No script for "prepublish" in "@wangyes/tools-fn", continuing
-62 silly lifecycle No script for "prepublish" in "@wangyes/w-cli", continuing
-63 silly lifecycle No script for "prepare" in "@wangyes/tools-fn", continuing
-64 silly lifecycle No script for "prepare" in "@wangyes/w-cli", continuing
-65 silly lifecycle No script for "prepublishOnly" in "@wangyes/tools-fn", continuing
-66 silly lifecycle No script for "prepublishOnly" in "@wangyes/w-cli", continuing
-67 silly lifecycle No script for "prepack" in "@wangyes/tools-fn", continuing
-68 silly lifecycle No script for "prepack" in "@wangyes/w-cli", continuing
-69 silly lifecycle No script for "postpack" in "@wangyes/tools-fn", continuing
-70 verbose packed packages/tools-fn
-71 silly lifecycle No script for "postpack" in "@wangyes/w-cli", continuing
-72 verbose packed packages/w-cli
-73 silly lifecycle No script for "postpack" in "wangyes-pre", continuing
-74 verbose publish @wangyes/tools-fn
-75 verbose publish @wangyes/w-cli
-76 silly FetchError: request to https://registry.npmjs.org/@wangyes%2fw-cli failed, reason: connect ETIMEDOUT 104.16.23.35:443
-76 silly     at ClientRequest.<anonymous> (/Users/wangjun/code/Mine/wangyes-pre/node_modules/minipass-fetch/lib/index.js:130:14)
-76 silly     at ClientRequest.emit (node:events:513:28)
-76 silly     at TLSSocket.socketErrorListener (node:_http_client:481:9)
-76 silly     at TLSSocket.emit (node:events:525:35)
-76 silly     at emitErrorNT (node:internal/streams/destroy:157:8)
-76 silly     at emitErrorCloseNT (node:internal/streams/destroy:122:3)
-76 silly     at processTicksAndRejections (node:internal/process/task_queues:83:21)
-76 silly  FetchError: request to https://registry.npmjs.org/@wangyes%2fw-cli failed, reason: connect ETIMEDOUT 104.16.23.35:443
-76 silly     at ClientRequest.<anonymous> (/Users/wangjun/code/Mine/wangyes-pre/node_modules/minipass-fetch/lib/index.js:130:14)
-76 silly     at ClientRequest.emit (node:events:513:28)
-76 silly     at TLSSocket.socketErrorListener (node:_http_client:481:9)
-76 silly     at TLSSocket.emit (node:events:525:35)
-76 silly     at emitErrorNT (node:internal/streams/destroy:157:8)
-76 silly     at emitErrorCloseNT (node:internal/streams/destroy:122:3)
-76 silly     at processTicksAndRejections (node:internal/process/task_queues:83:21) {
-76 silly   code: 'ETIMEDOUT',
-76 silly   errno: 'ETIMEDOUT',
-76 silly   syscall: 'connect',
-76 silly   address: '104.16.23.35',
-76 silly   port: 443,
-76 silly   type: 'system'
-76 silly }
-77 error ETIMEDOUT request to https://registry.npmjs.org/@wangyes%2fw-cli failed, reason: connect ETIMEDOUT 104.16.23.35:443
-78 error FetchError: request to https://registry.npmjs.org/@wangyes%2fw-cli failed, reason: connect ETIMEDOUT 104.16.23.35:443
-78 error     at ClientRequest.<anonymous> (/Users/wangjun/code/Mine/wangyes-pre/node_modules/minipass-fetch/lib/index.js:130:14)
-78 error     at ClientRequest.emit (node:events:513:28)
-78 error     at TLSSocket.socketErrorListener (node:_http_client:481:9)
-78 error     at TLSSocket.emit (node:events:525:35)
-78 error     at emitErrorNT (node:internal/streams/destroy:157:8)
-78 error     at emitErrorCloseNT (node:internal/streams/destroy:122:3)
+20 silly no diff found in @wangyes/tools-fn
+21 silly checking diff packages/w-cli
+22 silly found diff in packages/w-cli/src/script/index.ts
+23 verbose filtered diff [ 'packages/w-cli/src/script/index.ts' ]
+24 verbose updated @wangyes/w-cli
+25 verbose git-describe undefined => "@wangyes/w-cli@1.0.12-1-g4b30bfa"
+26 silly git-describe parsed => {"lastTagName":"@wangyes/w-cli@1.0.12","lastVersion":"1.0.12","refCount":"1","sha":"4b30bfa","isDirty":false}
+27 info execute Skipping releases
+28 silly lifecycle No script for "preversion" in "wangyes-pre", continuing
+29 silly lifecycle No script for "preversion" in "@wangyes/w-cli", continuing
+30 verbose version @wangyes/w-cli has no lockfile. Skipping lockfile update.
+31 silly lifecycle No script for "version" in "@wangyes/w-cli", continuing
+32 silly lifecycle No script for "version" in "wangyes-pre", continuing
+33 silly version Successfully applied prettier to updated file: packages/w-cli/package.json
+34 silly gitAdd [ 'packages/w-cli/package.json' ]
+35 silly gitCommit Publish
+35 silly gitCommit
+35 silly gitCommit  - @wangyes/w-cli@1.0.13
+36 verbose git [
+36 verbose git   'commit',
+36 verbose git   '-F',
+36 verbose git   '/private/var/folders/43/q8rc52s51q7b2pjkclfv2bp80000gn/T/b90ab7f2-3fe2-45da-b9d2-d983773df702/lerna-commit.txt'
+36 verbose git ]
+37 silly gitTag @wangyes/w-cli@1.0.13
+38 verbose git [ 'tag', '@wangyes/w-cli@1.0.13', '-m', '@wangyes/w-cli@1.0.13' ]
+39 silly lifecycle No script for "postversion" in "@wangyes/w-cli", continuing
+40 silly lifecycle No script for "postversion" in "wangyes-pre", continuing
+41 info git Pushing tags...
+42 silly gitPush origin master
+43 info publish Publishing packages to npm...
+44 silly getCurrentSHA
+45 verbose getCurrentSHA e6dc8cde659377d2f396aa3a28fa5f74495b94d4
+46 silly lifecycle No script for "prepublish" in "wangyes-pre", continuing
+47 silly lifecycle No script for "prepare" in "wangyes-pre", continuing
+48 silly lifecycle No script for "prepublishOnly" in "wangyes-pre", continuing
+49 silly lifecycle No script for "prepack" in "wangyes-pre", continuing
+50 verbose pack-directory packages/w-cli
+51 silly lifecycle No script for "prepublish" in "@wangyes/w-cli", continuing
+52 silly lifecycle No script for "prepare" in "@wangyes/w-cli", continuing
+53 silly lifecycle No script for "prepublishOnly" in "@wangyes/w-cli", continuing
+54 silly lifecycle No script for "prepack" in "@wangyes/w-cli", continuing
+55 silly lifecycle No script for "postpack" in "@wangyes/w-cli", continuing
+56 verbose packed packages/w-cli
+57 silly lifecycle No script for "postpack" in "wangyes-pre", continuing
+58 verbose publish @wangyes/w-cli
+59 silly FetchError: request to https://registry.npmjs.org/@wangyes%2fw-cli failed, reason: connect ETIMEDOUT 104.16.17.35:443
+59 silly     at ClientRequest.<anonymous> (/Users/wangjun/code/Mine/wangyes-pre/node_modules/minipass-fetch/lib/index.js:130:14)
+59 silly     at ClientRequest.emit (node:events:513:28)
+59 silly     at TLSSocket.socketErrorListener (node:_http_client:481:9)
+59 silly     at TLSSocket.emit (node:events:525:35)
+59 silly     at emitErrorNT (node:internal/streams/destroy:157:8)
+59 silly     at emitErrorCloseNT (node:internal/streams/destroy:122:3)
+59 silly     at processTicksAndRejections (node:internal/process/task_queues:83:21)
+59 silly  FetchError: request to https://registry.npmjs.org/@wangyes%2fw-cli failed, reason: connect ETIMEDOUT 104.16.17.35:443
+59 silly     at ClientRequest.<anonymous> (/Users/wangjun/code/Mine/wangyes-pre/node_modules/minipass-fetch/lib/index.js:130:14)
+59 silly     at ClientRequest.emit (node:events:513:28)
+59 silly     at TLSSocket.socketErrorListener (node:_http_client:481:9)
+59 silly     at TLSSocket.emit (node:events:525:35)
+59 silly     at emitErrorNT (node:internal/streams/destroy:157:8)
+59 silly     at emitErrorCloseNT (node:internal/streams/destroy:122:3)
+59 silly     at processTicksAndRejections (node:internal/process/task_queues:83:21) {
+59 silly   code: 'ETIMEDOUT',
+59 silly   errno: 'ETIMEDOUT',
+59 silly   syscall: 'connect',
+59 silly   address: '104.16.17.35',
+59 silly   port: 443,
+59 silly   type: 'system'
+59 silly }
+60 error ETIMEDOUT request to https://registry.npmjs.org/@wangyes%2fw-cli failed, reason: connect ETIMEDOUT 104.16.17.35:443
+61 error FetchError: request to https://registry.npmjs.org/@wangyes%2fw-cli failed, reason: connect ETIMEDOUT 104.16.17.35:443
+61 error     at ClientRequest.<anonymous> (/Users/wangjun/code/Mine/wangyes-pre/node_modules/minipass-fetch/lib/index.js:130:14)
+61 error     at ClientRequest.emit (node:events:513:28)
+61 error     at TLSSocket.socketErrorListener (node:_http_client:481:9)
+61 error     at TLSSocket.emit (node:events:525:35)
+61 error     at emitErrorNT (node:internal/streams/destroy:157:8)
+61 error     at emitErrorCloseNT (node:internal/streams/destroy:122:3)
