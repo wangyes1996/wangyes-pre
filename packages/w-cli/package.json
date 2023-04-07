@@ -1,6 +1,6 @@
 {
   "name": "@wangyes/w-cli",
-  "version": "1.0.13",
+  "version": "1.0.14",
   "main": "bin/index.js",
   "type": "commonjs",
   "author": "wangyes <wangyes1996@163.com>",
