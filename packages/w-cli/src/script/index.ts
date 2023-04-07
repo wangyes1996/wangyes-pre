@@ -1,6 +1,6 @@
 import { scriptMeta_item_T, scriptMeta_T } from "../types";
 import ora from "ora"
-import {execa} from 'execa';
+import {execa,$} from 'execa';
 const spinner = ora("Loading unicorns");
 
 export const findItemByKey=(obj:scriptMeta_T,key:string):scriptMeta_item_T|any=>{
@@ -39,11 +39,19 @@ export const scriptMeta:scriptMeta_T=[
 
     },
     // 执行一键部署docker
-    // {
-    //     command:"docker",
-    //     option:"",
-    //     describe:"一键安装docker镜像",
-    //     example:"w-cli docker <images>",
-    //     action:[]
-    // }
+    {
+        command:"docker",
+        option:"",
+        describe:"一键安装docker镜像",
+        example:"w-cli docker <images>",
+        action:[],
+        finallAction:async()=>{
+           
+            const {stdout} = await $`docker search centos`;
+            console.log(stdout);
+           
+            
+
+        }
+    }
 ]

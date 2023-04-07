@@ -14,13 +14,13 @@ import ora from "ora"
 const spinner = ora("Loading unicorns");
 
 const prog = sade("w-cli");
-console.log(figlet.textSync('FreeDom Is Everything!', {
-    font: 'Ghost',
-    horizontalLayout: 'default',
-    verticalLayout: 'default',
-    width: 150,
-    whitespaceBreak: true
-}));
+// console.log(figlet.textSync('FreeDom Is Everything!', {
+//     font: 'Ghost',
+//     horizontalLayout: 'default',
+//     verticalLayout: 'default',
+//     width: 150,
+//     whitespaceBreak: true
+// }));
 
 prog.version(version);
 scriptMeta.forEach((item, index) => {
@@ -29,8 +29,14 @@ scriptMeta.forEach((item, index) => {
         .describe(item.describe)
         .example(item.example)
         .action(async (arag)=>{
-            const res: res_T = await prompt(findItemByKey(scriptMeta,item.command).action);
 
+
+
+            let res: res_T|null=null
+            if(item.action&&item.action?.length>=0){
+
+               res = await prompt(findItemByKey(scriptMeta,item.command).action);
+            }
             item.finallAction(res)
        
 

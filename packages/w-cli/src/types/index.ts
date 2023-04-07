@@ -16,7 +16,7 @@ export type scriptMeta_item_T={
     option?:string,
     describe:string,
     example:string,
-    action:action_T,
+    action?:action_T,
     finallAction:Function
 }
 export type scriptMeta_T=scriptMeta_item_T[]
