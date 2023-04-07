@@ -31,10 +31,19 @@ export const scriptMeta:scriptMeta_T=[
             spinner.start();
             spinner.color = "yellow";
             spinner.text = "Loading rainbows";
-            execa('git',['clone','https://gitee.com/brother-linghu/cornucopia.git'],{cwd:'./'}).finally(()=>{
+            $`git clone https://gitee.com/brother-linghu/cornucopia.git`.finally(()=>{
                 spinner.succeed();
 
             })
+            // execa('git',['clone','https://gitee.com/brother-linghu/cornucopia.git'],{cwd:'./'}).finally(()=>{
+           
+                
+            //     spinner.succeed();
+            // }).catch((res)=>{
+            //     console.log(res);
+                
+
+            // })
         }
 
     },
