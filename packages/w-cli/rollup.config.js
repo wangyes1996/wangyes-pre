@@ -41,7 +41,7 @@ module.exports =  {
     //   delimiters: ['', ''],
     //   '#!/usr/bin/env node': ''
     // }),
-    nodeResolve({
+    nodeResolve({ 
       extensions,
       modulesOnly: true,
       preferredBuiltins: false
