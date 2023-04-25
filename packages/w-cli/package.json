@@ -7,7 +7,7 @@
   "bin": {
     "w-cli": "bin/index.js"
   },
-  "types": "bin/types/index.d",
+  "types": "bin/types/index.d.ts",
   "files": [
     "bin",
     "template"

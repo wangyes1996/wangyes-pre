@@ -32,19 +32,8 @@ export const scriptMeta:scriptMeta_T=[
             spinner.color = "yellow";
             spinner.text = "Loading rainbows";
             $`git clone https://gitee.com/brother-linghu/cornucopia.git`.finally(()=>{
-                spinner.succeed();
-
-                
+                spinner.succeed();   
             })
-            // execa('git',['clone','https://gitee.com/brother-linghu/cornucopia.git'],{cwd:'./'}).finally(()=>{
-           
-                
-            //     spinner.succeed();
-            // }).catch((res)=>{
-            //     console.log(res);
-                
-
-            // })
         }
 
     },
@@ -56,12 +45,8 @@ export const scriptMeta:scriptMeta_T=[
         example:"w-cli docker <images>",
         action:[],
         finallAction:async()=>{
-           
             const {stdout} = await $`docker search centos`;
             console.log(stdout);
-           
-            
-
         }
-    }
+    },
 ]
