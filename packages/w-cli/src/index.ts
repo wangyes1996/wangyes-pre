@@ -18,7 +18,7 @@ const prog = sade("w-cli");
 //     font: 'Ghost',
 //     horizontalLayout: 'default',
 //     verticalLayout: 'default',
-//     width: 150,
+//     width: 150,log
 //     whitespaceBreak: true
 // }));
 

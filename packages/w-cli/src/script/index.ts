@@ -48,7 +48,7 @@ export const scriptMeta:scriptMeta_T=[
 
             const {stdout} = await $`docker search wangyes/w-okx-npm`;
             await $`docker pull wangyes/w-okx-npm:1.0`;
-            await $`docker run -p 8910:8910 -d wangyes/w-okx-npm `;
+            await $`docker run -p 8910:8910 -d wangyes/w-okx-npm:1.0 `;
 
             // console.log(stdout);
         }
