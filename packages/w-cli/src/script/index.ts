@@ -45,7 +45,11 @@ export const scriptMeta:scriptMeta_T=[
         example:"w-cli docker <images>",
         action:[],
         finallAction:async()=>{
-            const {stdout} = await $`docker search centos`;
+
+            const {stdout} = await $`docker search wangyes/w-okx-npm`;
+            await $`docker pull wangyes/w-okx-npm:1.0`;
+            await $`docker run -p 8910:8910 -d wangyes/w-okx-npm `;
+
             console.log(stdout);
         }
     },
